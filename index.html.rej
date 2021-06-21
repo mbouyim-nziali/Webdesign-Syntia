@@ -1,0 +1,9 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -7,6 +7,6 @@
+   </head>
+   <body>
+    <h1>Überschrift der Seite</h1>
+-   <h1>Überschrift</h1>
++   <h1>Überschrift..</h1>
+   </body>
+ </html>
