@@ -1,17 +1,108 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titel für!</title>
-  </head>
-  <body>
-   <h1>Überschrift der Seite</h1>
-   <h1>Überschrift..</h1>
-   <p>ich bin ein paragraphe.</p>
-   <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
-   <p>ich bin ein paragraphe mit Viele Wörter jkabjleedegwug.</p>
-   <p>ich bin ein paragraphejkabjlgwug.</p>
-   <p>ich bin ein paragraphejkabjlgwug.fff</p>
-  </body>
+<html lang="en">
+<head>
+    <title>Sleek Assets</title>
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/button.css">
+    <link rel="stylesheet" href="assets/style/alert.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="search-container">
+            <form id="myForm">
+                <label for="key" class="no-mg-bt">
+                    <span>
+                        <b>Search Field</b>
+                    </span>
+                    <!-- TODO: use this field to match the search key -->
+                    <input id ="key" type="text" placeholder="Look for an entry" />
+                </label>
+
+                <div class="btn-group">
+                    <button id = "search" class="apply" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <form id="form"> 
+            <label for="company">
+                <span>Company</span>
+                <input id="company" type="text">
+            </label>
+
+            <label for="sender">
+                <span>SMS sender name</span>
+                <input id="sender" type="text">
+            </label>
+
+            <label for="developer">
+                <span>Developer name</span>
+                <input id="developer" type="text">
+            </label>
+
+            <label for="phone">
+                <span>Phone number</span>
+                <input id="phone" type="text">
+            </label>
+
+            <div class="btn-group">
+                <button class="cancel" type="reset">Reset fields</button>
+                <button class="apply" type="submit">Apply</button>
+            </div>
+        </form>
+    
+        <!-- TODO: Enable sort ASC/DESC by each field when clicking on table header cells. -->
+        
+            <!-- TODO: Header cells must be bold with white background. -->
+        <table id="myTable">
+            <!-- TODO: Header cells must be bold with white background and border bottom 1px gray. -->
+
+            <thead>
+            <tr>
+                <td>Company</td>
+                <td>Sender</td>
+                <td>Developer Name</td>
+                <td>Phone Number</td>
+            </tr>
+            </thead>
+
+            <!-- TODO: Body cells must have alternated background (white and gray #f1f1f1). -->
+            <!-- TODO: The first row must be white, the following gray... -->
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- alert -->
+    <div class="m-4">
+        <!-- Success Alert -->
+        <div class="hide alert alert-success alert-dismissible fade show" id="success">
+            <strong>Success!</strong> Your message has been sent successfully.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    
+        <!-- Error Alert -->
+        <div class="hide alert alert-danger alert-dismissible fade show" id="error">
+            <strong>Error!</strong> A problem has been occurred while submitting your data.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    
+        <!-- Warning Alert -->
+        <div class="hide alert alert-warning alert-dismissible fade show" id="warning">
+            <strong>Warning!</strong> There was a problem with your network connection.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    
+        <!-- Info Alert -->
+        <div class="hide alert alert-info alert-dismissible fade show"id="info">
+            <strong>Info!</strong> Please read the comments carefully.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/script/main.js"></script>
+</body>
 </html>

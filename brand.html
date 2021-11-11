@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sleek Assets</title>
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/button.css">
+    <link rel="stylesheet" href="assets/style/alert.css">
+</head>
+<body>
+<div class="container_brand">
+    <div id="search-container">
+        <form id="formSearch">
+            <label class="no-mg-bt">
+                <span>
+                    <b>Search Field</b>
+                </span>
+                <input type="text" name="key" placeholder="Look for an entry" />
+            </label>
+
+            <div class="btn-group">
+                <button class="apply">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <table id="table-brands">
+        <!-- TODO: Header cells must be bold with white background and border bottom 1px gray. -->
+        <thead>
+        <tr>
+            <th id="id_brand">ID</th>
+            <th>Name</th>
+            <th>Short Name</th>
+            <th>Category</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>Website</th>
+            <th>Facebook</th>
+        </tr>
+        </thead>
+
+        <!-- TODO: Body cells must have alternated background (white and gray #f1f1f1). -->
+        <!-- TODO: The first row must be white, the following gray... -->
+        <tbody></tbody>
+    </table>
+
+    <!-- TODO: create another table for brand review comments. This table is hidden by default. -->
+    <table id="table-comments"></table>
+</div>
+
+<script type="text/javascript" src="assets/script/utils.js"></script>
+<script type="text/javascript" src="assets/script/brand.js"></script>
+</body>
+</html>
